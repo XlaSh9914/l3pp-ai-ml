@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    /> -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Salary Prediction</title>
+  </head>
+  <body>
+    <div id="login-popup" class="login-popup">
+      <div class="login-content">
+        <span class="login-close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h1 class="jetbrains-mono">Salary Prediction</h1>
+        <form onsubmit="return validateLoginForm(event)">
+          <label class="jetbrains-mono">Username</label>
+          <input
+            class="btn"
+            type="text"
+            id="loginUsername"
+            name="loginUsername"
+            placeholder="Enter your username"
+            required="required"
+          />
+
+          <label class="jetbrains-mono">Password</label>
+          <input
+            class="btn"
+            type="password"
+            id="loginPassword"
+            name="loginPassword"
+            placeholder="Enter your password"
+            required="required"
+          />
+
+          <button class="btn btn-highlight" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
